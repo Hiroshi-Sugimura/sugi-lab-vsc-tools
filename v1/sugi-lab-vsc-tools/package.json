@@ -12,10 +12,27 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "sugi-lab-vsc-tools.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "sugimode.upcaseForwardChar",
+        "title": "Upcase Forward Char: Sugimode"
+      },
+      {
+        "command": "sugimode.daytimeRenewal",
+        "title": "Daytime Renewal: Sugimode"
+      }],
+      "keybindings": [
+        {
+          "command": "sugimode.upcaseForwardChar",
+          "key": "ctrl+u",
+          "mac": "ctrl+u"
+        },
+        {
+          "command": "sugimode.daytimeRenewal",
+          "key": "ctrl+c d",
+          "mac": "ctrl+c d"
+        }
+      ]
   },
   "scripts": {
     "lint": "eslint .",
