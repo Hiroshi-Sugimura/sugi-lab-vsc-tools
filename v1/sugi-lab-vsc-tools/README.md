@@ -12,6 +12,20 @@ For example if there is an image subfolder under your extension project workspac
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
+```
+{
+  "command": "sugimode.upcaseForwardChar",
+  "key": "ctrl+u",
+  "mac": "ctrl+u"
+},
+{
+  "command": "sugimode.daytimeRenewal",
+  "key": "ctrl+c d",
+  "mac": "ctrl+c d"
+}
+```
+
+        
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
