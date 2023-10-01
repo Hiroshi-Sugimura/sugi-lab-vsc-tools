@@ -3,6 +3,8 @@
   "displayName": "sugi-lab-vsc-tools",
   "description": "This is mini tools for vscode by sugimura lab.",
   "version": "0.0.1",
+  "publisher": "Sugi-lab",
+  "repository": "https://github.com/Hiroshi-Sugimura/sugi-lab-vsc-tools.git",
   "engines": {
     "vscode": "^1.82.0"
   },
