@@ -6,6 +6,20 @@ This is an extension "sugi-lab-vsc-tools".
 
 ほとんど不要とも言えるような細かな動作をツール群として提供する。
 
+```
+{
+  "command": "sugimode.upcaseForwardChar",
+  "key": "ctrl+u",
+  "mac": "ctrl+u"
+},
+{
+  "command": "sugimode.daytimeRenewal",
+  "key": "ctrl+c d",
+  "mac": "ctrl+c d"
+}
+```
+
+        
 ## Requirements
 
 Nothing.
