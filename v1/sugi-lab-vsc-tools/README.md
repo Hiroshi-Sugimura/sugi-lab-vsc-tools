@@ -16,9 +16,13 @@ Nothing.
 
 ## Known Issues
 
-イメージアイコンがないとか、その程度。あと英語の説明にするか、日本語の説明にするかとか。
+英語の説明にするか、日本語の説明にするかとか。
 
 ## Release Notes
+
+### 0.0.2
+
+Add icon, add when clause.
 
 ### 0.0.1
 

@@ -2,7 +2,7 @@
   "name": "sugi-lab-vsc-tools",
   "displayName": "sugi-lab-vsc-tools",
   "description": "This is mini tools for vscode by sugimura lab.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Sugi-lab",
   "repository": "https://github.com/Hiroshi-Sugimura/sugi-lab-vsc-tools.git",
   "engines": {
@@ -11,6 +11,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "icon.png",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
@@ -26,11 +27,13 @@
       "keybindings": [
         {
           "command": "sugimode.upcaseForwardChar",
+          "when": "editorTextFocus",
           "key": "ctrl+u",
           "mac": "ctrl+u"
         },
         {
           "command": "sugimode.daytimeRenewal",
+          "when": "editorTextFocus",
           "key": "ctrl+c d",
           "mac": "ctrl+c d"
         }
