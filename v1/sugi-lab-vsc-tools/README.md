@@ -34,6 +34,10 @@ Nothing.
 
 ## Release Notes
 
+### 0.0.3
+
+Bug fix, 月が0から始まるのを調整した。
+
 ### 0.0.2
 
 Add icon, add when clause.

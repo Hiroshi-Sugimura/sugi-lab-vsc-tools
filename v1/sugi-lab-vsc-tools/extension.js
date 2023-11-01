@@ -42,7 +42,7 @@ function activate(context) {
 
 		let today = new Date();
 		let year = today.getFullYear().toString();
-		let month = ('0' + today.getMonth()).slice(-2);
+		let month = ('0' + (today.getMonth() + 1)).slice(-2);  // 月は0から始まるみたい
 		let date = ('0' + today.getDate()).slice(-2);
 		// console.log( year, month, date );
 
