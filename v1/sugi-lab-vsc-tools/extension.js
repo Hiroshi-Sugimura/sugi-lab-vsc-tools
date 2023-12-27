@@ -3,9 +3,6 @@
 const vscode = require('vscode');
 
 
-
-
-
 //------------------------------------------------------------------------------
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -36,8 +33,8 @@ function activate(context) {
 
 	// yyyy.MM.ddを更新する
 	// yyyy.MM.dd を現在値にする
-	let daytimeRrenewal = vscode.commands.registerTextEditorCommand('sugimode.daytimeRenewal', function (textEditor, edit) {
-		// console.log('daytimeRrenewal()');
+	let daytimeRenewal = vscode.commands.registerTextEditorCommand('sugimode.daytimeRenewal', function (textEditor, edit) {
+		// console.log('daytimeRenewal()');
 		let pos = textEditor.selection.active;  // 現在カーソル位置
 
 		let today = new Date();
@@ -56,8 +53,27 @@ function activate(context) {
 		// console.log(te);
 		edit.replace(teRange, te);  // 範囲の文字を置換
 	});
+	context.subscriptions.push(daytimeRenewal);  // 関数登録
 
-	context.subscriptions.push(daytimeRrenewal);  // 関数登録
+
+	// カーソルの前後の文字を入れ替える
+	let transposeChars = vscode.commands.registerTextEditorCommand('sugimode.transposeChars', function (textEditor) {
+		// console.log('transposeChars()');
+		let pos = textEditor.selection.active;  // 現在カーソル位置
+		if (pos.character === 0) {
+			return;
+		}
+		const next_char = textEditor.document.getText(new vscode.Range(pos, pos.translate(0, 1)));
+		const previous_char = textEditor.document.getText(new vscode.Range(pos.translate(0, -1), pos));
+
+		textEditor.edit(edit => {
+			edit.delete(new vscode.Range(pos.translate(0, -1), pos.translate(0, 1)));
+			edit.insert(pos.translate(0, -1), next_char);
+			edit.insert(pos.translate(0, 1), previous_char);
+		});
+	});
+
+	context.subscriptions.push(transposeChars);  // 関数登録
 
 	// my functions end
 	//================================================================

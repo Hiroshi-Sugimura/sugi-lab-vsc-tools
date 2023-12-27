@@ -16,10 +16,15 @@ This is an extension "sugi-lab-vsc-tools".
   "command": "sugimode.daytimeRenewal",
   "key": "ctrl+c d",
   "mac": "ctrl+c d"
+},
+{
+  "command": "sugimode.transposeChars",
+  "key": "ctrl+t",
+  "mac": "ctrl+t"
 }
 ```
 
-        
+
 ## Requirements
 
 Nothing.
@@ -33,6 +38,10 @@ Nothing.
 英語の説明にするか、日本語の説明にするかとか。
 
 ## Release Notes
+
+### 0.1.0
+
+Add func, transposeChars追加した。
 
 ### 0.0.3
 
@@ -49,5 +58,3 @@ Initial release.
 ## Hub URL
 
 - https://marketplace.visualstudio.com/manage/publishers/Sugi-lab/extensions/sugi-lab-vsc-tools/hub
-
-

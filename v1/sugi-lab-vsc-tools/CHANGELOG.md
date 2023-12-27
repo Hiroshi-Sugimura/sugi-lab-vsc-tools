@@ -4,6 +4,10 @@ All notable changes to the "sugi-lab-vsc-tools" extension will be documented in 
 
 ## [Unreleased]
 
+### 0.1.0
+
+add: transposeChars追加した。
+
 ### 0.0.3
 
 bugfix: 月が0から始まるので＋１した。
@@ -13,4 +17,3 @@ bugfix: 月が0から始まるので＋１した。
 add: デフォルトのキーコンフィグを設定した。
 
 ### Initial release
-
