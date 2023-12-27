@@ -31,6 +31,7 @@ function activate(context) {
 	context.subscriptions.push(upcaseForwardChar);  // 関数登録
 
 
+	//----------------------------------------------
 	// yyyy.MM.ddを更新する
 	// yyyy.MM.dd を現在値にする
 	let daytimeRenewal = vscode.commands.registerTextEditorCommand('sugimode.daytimeRenewal', function (textEditor, edit) {
@@ -56,6 +57,7 @@ function activate(context) {
 	context.subscriptions.push(daytimeRenewal);  // 関数登録
 
 
+	//----------------------------------------------
 	// カーソルの前後の文字を入れ替える
 	let transposeChars = vscode.commands.registerTextEditorCommand('sugimode.transposeChars', function (textEditor) {
 		// console.log('transposeChars()');
